@@ -1,0 +1,235 @@
+/* ==========================================================================
+   CAREER DISCOVERY & GUIDANCE PLATFORM — RESPONSIVE STYLES
+   Breakpoints: 1200px, 992px, 768px, 576px
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (< 1200px) */
+@media (max-width: 1200px) {
+  .stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .categories-mosaic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .support-groups-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .conversation-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets (< 992px) */
+@media (max-width: 992px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .nav-menu,
+  .nav-actions .btn {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .career-direction-map {
+    max-width: 440px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .service-grid.reverse {
+    direction: ltr;
+  }
+
+  .co-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .tools-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .suggested-clusters {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .page-hero {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .hero-home {
+    padding: 3rem 0 4rem;
+  }
+
+  .section-stage-selector,
+  .section-categories,
+  .section-journey,
+  .section-co-exploration,
+  .service-block {
+    padding: 4rem 0;
+  }
+
+  .stages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .career-grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conversation-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-groups-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-groups {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-selects {
+    flex-direction: column;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-window {
+    padding: 2rem 1.25rem;
+  }
+
+  .assessment-container {
+    padding: 2rem 1.25rem;
+  }
+
+  .booking-form-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .co-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .career-direction-map {
+    max-width: 320px;
+    height: 320px;
+  }
+
+  .map-node {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .map-node.center-origin {
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* Extra Small Phones (< 480px) */
+@media (max-width: 480px) {
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .quiz-nav-controls {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .quiz-nav-controls .btn {
+    width: 100%;
+  }
+}
