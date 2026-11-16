@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Explorer | Interactive Career Pathways Library</title>
+  <meta name="description" content="Explore careers beyond what you already know. Discover 30+ professions across technology, healthcare, business, creative arts, science, and law with detailed skill maps and pathways.">
+  <meta name="keywords" content="career explorer, career database, career paths, job responsibilities, skills assessment, career exploration library">
+  
+  <meta property="og:title" content="Career Explorer | Interactive Career Pathways Library">
+  <meta property="og:description" content="Explore careers beyond what you already know: responsibilities, required skills, and educational pathways across 30+ professions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/career-explorer.html">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Shared Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="site-logo" aria-label="Career Discovery Home">
+        <div class="logo-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Career Discovery</span>
+          <span class="logo-tagline">Guidance &amp; Pathways</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="career-explorer.html" class="nav-link active">Career Explorer</a></li>
+          <li><a href="career-assessment.html" class="nav-link">Career Assessment</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          Book a Session
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <div class="mobile-nav-content">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem;">
+          <div class="logo-symbol" style="width: 36px; height: 36px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          </div>
+          <span style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">Career Discovery</span>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About</a></li>
+          <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+          <li><a href="career-explorer.html" class="mobile-nav-link active">Career Explorer</a></li>
+          <li><a href="career-assessment.html" class="mobile-nav-link">Career Assessment</a></li>
+          <li><a href="resources.html" class="mobile-nav-link">Resources</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Counselling Session</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         PAGE HERO: CAREER EXPLORER
+         ========================================================================== -->
+    <section class="page-hero dark-hero">
+      <div class="bg-grid-subtle"></div>
+      <div class="container container-narrow text-center">
+        <span class="eyebrow dark reveal-on-scroll">
+          <span class="eyebrow-dot"></span>
+          Interactive Career Library
+        </span>
+        <h1 class="reveal-on-scroll stagger-1" style="margin-bottom: 1.5rem;">
+          Explore Careers Beyond What You Already Know.
+        </h1>
+        <p class="section-lead reveal-on-scroll stagger-2">
+          Discover different industries, understand what people do in each profession, and explore possible educational and skill pathways.
+        </p>
+      </div>
+    </section>
+
+    <!-- Image 10: career-exploration-digital-library.jpg -->
+    <section style="padding: 2.5rem 0 0; background: var(--color-ivory);">
+      <div class="container">
+        <div class="image-placeholder ratio-21-9">
+          <img src="images/career-exploration-digital-library.jpg" alt="An expansive, modern digital career library interface with multidimensional career nodes" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE EXPLORER & FILTERS
+         ========================================================================== -->
+    <section style="padding: 4.5rem 0 6rem; background: var(--color-ivory);">
+      <div class="container">
+        <!-- Interactive Controls Box -->
+        <div class="explorer-controls reveal-on-scroll">
+          <!-- Live Search Input -->
+          <div class="search-bar-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="career-search" class="search-input" placeholder="Search by career title, skill (e.g. SQL, Empathy), or keyword..." aria-label="Search career library">
+          </div>
+
+          <!-- Category Pills & Dropdown Filters -->
+          <div class="filter-groups">
+            <div class="filter-pills" role="tablist" aria-label="Career Categories">
+              <button class="filter-pill active" data-category-filter="all" type="button">All Categories</button>
+              <button class="filter-pill" data-category-filter="Technology" type="button">Technology</button>
+              <button class="filter-pill" data-category-filter="Healthcare" type="button">Healthcare</button>
+              <button class="filter-pill" data-category-filter="Business" type="button">Business &amp; Finance</button>
+              <button class="filter-pill" data-category-filter="Creative" type="button">Creative &amp; Design</button>
+              <button class="filter-pill" data-category-filter="Science" type="button">Science &amp; Research</button>
+              <button class="filter-pill" data-category-filter="Law" type="button">Law &amp; Policy</button>
+            </div>
+
+            <div class="filter-selects">
+              <div>
+                <label for="filter-stage" style="font-size: 0.78rem; font-weight: 600; text-transform: uppercase; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Stage</label>
+                <select id="filter-stage" class="filter-select" aria-label="Filter by Education Stage">
+                  <option value="all">All Stages</option>
+                  <option value="school">School / Foundation</option>
+                  <option value="college">College / Undergraduate</option>
+                  <option value="graduate">Graduate / Entry Role</option>
+                  <option value="professional">Mid-Career Professional</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="filter-interest" style="font-size: 0.78rem; font-weight: 600; text-transform: uppercase; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Interest Area</label>
+                <select id="filter-interest" class="filter-select" aria-label="Filter by Interest Area">
+                  <option value="all">All Interests</option>
+                  <option value="technology">Technology &amp; Logic</option>
+                  <option value="analytical">Data &amp; Analysis</option>
+                  <option value="creative">Aesthetics &amp; Creative</option>
+                  <option value="science">Empirical Science</option>
+                  <option value="leadership">Leadership &amp; Management</option>
+                  <option value="social">Social &amp; Human Care</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Counter display -->
+          <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--color-text-muted); font-family: var(--font-mono);" id="careers-count">
+            Loading career database...
+          </div>
+        </div>
+
+        <!-- Career Cards Grid Container (Rendered via career-explorer.js) -->
+        <div id="career-grid" class="career-grid-layout reveal-on-scroll stagger-1">
+          <!-- Dynamic Career Cards Injected Here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAREER DETAIL MODAL (Overlay Window)
+         ========================================================================== -->
+    <div class="modal-overlay" id="career-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-window">
+        <button class="modal-close-btn" id="career-modal-close" aria-label="Close career details">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div id="career-modal-body">
+          <!-- Dynamic details injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="logo-symbol" style="width: 38px; height: 38px;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            </div>
+            <span style="font-weight: 700; color: var(--color-white); font-size: 1.15rem;">Career Discovery</span>
+          </div>
+          <p>
+            An individualized career exploration and guidance platform designed to help students, graduates, and professionals discover their direction.
+          </p>
+          <div style="margin-top: 1.25rem; font-size: 0.85rem; color: #7B8BA3;">
+            "Your Future Isn't One-Size-Fits-All."
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About &amp; Philosophy</a></li>
+            <li><a href="services.html">Counselling Services</a></li>
+            <li><a href="career-explorer.html">Career Explorer</a></li>
+            <li><a href="career-assessment.html">Career Discovery Tool</a></li>
+            <li><a href="resources.html">Resources &amp; Checklists</a></li>
+            <li><a href="contact.html">Contact &amp; Book Session</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Guidance Segments</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#school-services">School Students (Class 9–10)</a></li>
+            <li><a href="services.html#higher-sec-services">Class 11–12 Planning</a></li>
+            <li><a href="services.html#college-services">College &amp; Degree Alignment</a></li>
+            <li><a href="services.html#graduate-services">Graduate Pathways</a></li>
+            <li><a href="services.html#professional-services">Working Professionals</a></li>
+            <li><a href="services.html#parent-services">Parent Consultation</a></li>
+            <li><a href="services.html#institutional-services">Institutions &amp; Schools</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Demo Session Desk</h5>
+          <p style="font-size: 0.85rem; color: #8C9BB0; margin-bottom: 0.75rem;">
+            Inquiries for one-on-one career exploration sessions:
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-lavender); margin-bottom: 0.4rem;">
+            demo@example.com
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-lavender); margin-bottom: 1.25rem;">
+            +91 00000 00000
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">Book Demo Session</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <strong>Demonstration &amp; Ethical Disclosure:</strong> This website is an illustrative digital agency demonstration portfolio. It does not represent an accredited higher-education institution, university admission authority, or statutory licensing board. All assessment tools, career profiles, and sample editorial resources are exploratory and do not guarantee admission, employment, or examination results.
+        </div>
+        <div style="color: #6C7A90; font-size: 0.78rem;">
+          &copy; 2026 Career Discovery Platform • Static Demonstration
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/career-data.js"></script>
+  <script src="assets/js/career-explorer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
